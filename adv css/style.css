@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+     height: 100%;
+     width: 100%;
+}
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes changeBgc{
+    from{
+        background-color: crimson;
+        border-radius: 0px;
+        scale: 1;
+    }
+    to{
+        background-color: royalblue;
+        border-radius: 50px;
+        scale: 0.25;
+    }
+}
+.box{
+    height: 300px;
+    width: 400px;
+    animation: changeBgc 5s infinite forwards alternate;
+}
