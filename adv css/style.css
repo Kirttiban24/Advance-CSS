@@ -14,6 +14,11 @@ body{
     align-items: center;
     justify-content: center;
 }
+@property --bgColor{
+    syntax: "<color>";
+    initial-value: white;
+    inherits: false;
+}
 @keyframes changeBgc{
     from{
         background-color: crimson;
@@ -30,4 +35,4 @@ body{
     height: 300px;
     width: 400px;
     animation: changeBgc 5s infinite forwards alternate;
-}
+} 
